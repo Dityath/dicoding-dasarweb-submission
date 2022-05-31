@@ -1,0 +1,274 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+}
+
+/* Header */
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem 2rem;
+  background-color: var(--primary-1);
+  border-bottom: 1px solid var(--primary-3);
+  z-index: 50;
+}
+
+header #logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-4);
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary-4);
+}
+
+header .header-link a {
+  font-size: 1rem;
+  color: var(--primary-4);
+  text-decoration: none;
+}
+
+header .header-link:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+header #hamburger {
+  display: none;
+}
+
+#hamburger-layer {
+  display: none;
+  position: fixed;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 2rem;
+  background-color: var(--primary-1);
+}
+
+#hamburger-layer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+#hamburger-layer ul li nav a {
+  text-decoration: none;
+  color: var(--primary-4);
+}
+
+#hamburger-layer ul li:hover {
+  text-decoration: none;
+  color: var(--primary-4);
+  opacity: 75%;
+}
+
+/* aside */
+
+aside {
+  position: sticky;
+  position: -webkit-sticky;
+  box-sizing: border-box;
+  width: 20%;
+  height: 27rem;
+  top: 10rem;
+  padding: 1rem 0.75rem;
+  border: 1px solid var(--primary-3);
+}
+
+aside h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+aside ul li {
+  margin-top: 0.5rem;
+  line-height: 20px;
+  color: gray;
+}
+
+aside img {
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+/* main */
+
+main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 10rem 2rem;
+}
+
+.main-canvas {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+
+.content {
+  width: 75%;
+  color: var(--primary-4);
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.content h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.content img {
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+/* about main */
+
+#about {
+  margin-top: 5rem;
+  text-align: left;
+}
+
+#about .articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#about article {
+  margin-top: 1rem;
+  color: gray;
+  width: 50%;
+  line-height: 1.25rem;
+}
+
+.articles img {
+  margin-top: -0.75rem;
+  width: 30%;
+}
+
+/* skills main */
+
+#skills {
+  margin-top: 5rem;
+  text-align: left;
+}
+
+#skills .list {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#skills .list h3 {
+  font-size: 1.25rem;
+}
+
+#skills .list ul {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: gray;
+}
+
+#skills .list ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  color: var(--primary-2);
+}
+
+/* kontak main */
+#contact {
+  margin-top: 8rem;
+}
+
+#contact .hub {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+#contact .hub img {
+  width: 40%;
+}
+
+#contact .hub ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact .hub ul li a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--primary-2);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+#contact .hub ul li:hover {
+  opacity: 75%;
+}
+
+/* footer */
+
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  height: 12rem;
+  background-color: var(--primary-4);
+  color: var(--primary-1);
+  box-sizing: border-box;
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .flex-footer h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+footer .end-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 5rem;
+}
+
+footer .end-footer a:hover {
+  opacity: 75%;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Ditya Athallah-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/var/var.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/favicon/site.webmanifest" />
+
+    <title>Dityath's Portofolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Dityath</div>
+      <ul>
+        <li>
+          <nav class="header-link">
+            <a href="#">Main</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#about">About</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#skills">Skills</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#contact">Contact</a>
+          </nav>
+        </li>
+      </ul>
+      <button id="hamburger" onclick="toggleHamburger()">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 1V2H10H20V1V0H10H0V1ZM0 7V8H10H20V7V6H10H0V7ZM0 13V14H10H20V13V12H10H0V13Z"
+            fill="#0D1A2E"
+          />
+        </svg>
+      </button>
+    </header>
+    <div id="hamburger-layer">
+      <ul>
+        <li>
+          <nav class="header-link">
+            <a href="#">Main</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#about">About</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#skills">Skills</a>
+          </nav>
+        </li>
+        <li>
+          <nav class="header-link">
+            <a href="#contact">Contact</a>
+          </nav>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <span class="main-canvas">
+        <div class="content">
+          <div id="main">
+            <h1>Hi Everyone!!</h1>
+            <h2>Welcome to my website.</h2>
+            <img src="./public/pic-1.png" alt="Main Image" />
+          </div>
+          <div id="about">
+            <h2>About Me</h2>
+            <div class="articles">
+              <article>
+                Hai, saya Ditya Athallah. Saya Frontend Developer berusia 21
+                tahun yang berbasis di Indonesia, dengan spesialisasi javascript
+                dan React.js. Saya dulunya merupakan seorang mahasiswa di
+                Universitas Telkom jurusan Informatika Kelas Internasional. Tapi
+                sayangnya, saya tidak bisa lulus dan memiliki gelar di sana
+                karena situasi ekonomi. Agak sedih tapi saya harus move on dan
+                terus memperbaiki diri untuk melangkah lebih jauh.
+              </article>
+              <img src="./public/pic-2.png" alt="Foto Artikel 1" />
+            </div>
+            <div class="articles">
+              <img src="./public/pic-3.png" alt="Foto Artikel 1" />
+              <article>
+                Saya memiliki minat besar dalam rekayasa perangkat lunak sejak
+                2018, terutama dalam pengembangan web. Saya telah belajar
+                pengembangan web selama 2 tahun. Well, sebenarnya saya sudah
+                jatuh cinta dengan bahasa pemrograman sejak saya duduk di bangku
+                sekolah dasar, dan saya sangat menyukainya.
+              </article>
+            </div>
+          </div>
+          <div id="skills">
+            <h2>Beberapa Skill Yang Saya Kuasai</h2>
+            <div class="list">
+              <div>
+                <h3>Language</h3>
+                <ul>
+                  <li>Javascript</li>
+                  <li>PHP</li>
+                  <li>Go Language</li>
+                  <li>Python</li>
+                  <li>Solidity</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Frontend</h3>
+                <ul>
+                  <li>Native Html Css</li>
+                  <li>React Js</li>
+                  <li>TailwindCss</li>
+                  <li>Sass and Scss</li>
+                  <li>Svelte or Vue</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Backend</h3>
+                <ul>
+                  <li>FastApi</li>
+                  <li>Express Js</li>
+                  <li>MongoDb</li>
+                  <li>Postgres Db</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="contact">
+            <h2>Hubungi Saya</h2>
+            <div class="hub">
+              <img src="./public/pic-4.png" alt="Foto kontak" />
+              <ul>
+                <li>
+                  <a href="mailto:dityaathallah107@gmail.com">
+                    <svg
+                      width="28"
+                      height="22"
+                      viewBox="0 0 28 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.7168 0.841844C0.2737 1.30487 -0.00979989 1.88512 0.0861001 2.13091C0.18235 2.37703 3.3523 4.47219 7.13055 6.78666L14 10.9955L20.8694 6.78666C24.6477 4.47219 27.8176 2.37703 27.9139 2.13091C28.0098 1.88512 27.7263 1.30487 27.2832 0.841844L26.4778 0H14H1.52215L0.7168 0.841844ZM0 12.7322V20.3125L0.85925 21.1561L1.71815 22H14H26.2819L27.1407 21.1561L28 20.3125V12.7322V5.15144L25.2875 6.81931C23.7954 7.73644 20.6454 9.67175 18.2875 11.12L14 13.7531L9.7125 11.12C7.3542 9.67175 4.20455 7.73644 2.7125 6.81931L0 5.15144V12.7322Z"
+                        fill="#87ACDB"
+                      />
+                    </svg>
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dityath/"
+                  >
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.954722 0.954722L0 1.90906V14V26.0909L0.954722 27.0453L1.90906 28H14H26.0909L27.0453 27.0453L28 26.0909V14V1.90906L27.0453 0.954722L26.0909 0H14H1.90906L0.954722 0.954722ZM8.58122 5.45806C9.73117 6.07367 9.59272 8.06517 8.36111 8.62633C6.87711 9.30261 5.44444 8.51706 5.44444 7.02761C5.44444 5.3515 6.96267 4.592 8.58122 5.45806ZM9.33333 16.3333V21.7778H7.38889H5.44444V16.3333V10.8889H7.38889H9.33333V16.3333ZM16.3333 11.4722C16.3333 12.1979 16.7001 12.1948 17.6715 11.4598C18.0868 11.1459 18.9296 10.8889 19.5444 10.8889C22.3759 10.8889 23.3333 12.7034 23.3333 18.0709V21.7778H21.4029H19.4724L19.3612 17.9861L19.25 14.1944L18.1806 14.0716C16.7732 13.9094 16.3333 15.0558 16.3333 18.8864V21.7778H14.3889H12.4444V16.3333V10.8889H14.3889C15.8581 10.8889 16.3333 11.0316 16.3333 11.4722Z"
+                        fill="#87ACDB"
+                      />
+                    </svg>
+                    Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/dityath/">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.13711 0.316673C3.29636 0.867368 0.868829 3.44356 0.339706 5.40747C0.0592593 6.45003 -0.0552725 9.9311 0.0251354 14.9701C0.150258 22.8124 0.162024 22.9097 1.2038 24.4822C1.78234 25.3561 2.92962 26.49 3.75331 27.0019C5.21321 27.9095 5.47012 27.9326 14.0757 27.9326C22.6813 27.9326 22.9382 27.9095 24.3981 27.0019C25.2218 26.49 26.3691 25.3553 26.9476 24.481L28 22.8909V14.037C28 5.40119 27.9773 5.14624 27.0692 3.68596C26.5574 2.86227 25.4234 1.71498 24.5495 1.13644C22.9633 0.0856472 22.948 0.0840785 14.6939 0.007593C10.1471 -0.0347682 5.84666 0.104475 5.13711 0.316673ZM24.6503 3.59535C25.6925 4.85089 24.162 6.7795 22.8029 5.92365C21.9314 5.37491 21.7184 4.33 22.3283 3.59535C22.9339 2.8654 24.0447 2.8654 24.6503 3.59535ZM18.3844 7.48631C20.7229 9.03367 21.7243 10.9889 21.7243 14.0084C21.7243 17.067 20.7209 18.9842 18.2726 20.6045C16.0843 22.0527 12.2538 22.1092 10.029 20.7261C7.05984 18.8803 5.66467 15.2153 6.60367 11.7283C7.14339 9.7236 9.54385 7.15565 11.4128 6.58378C13.4693 5.95424 16.7021 6.37275 18.3844 7.48631ZM12.3107 9.65575C10.5648 10.4226 9.56503 12.0162 9.56503 14.0323C9.56503 15.6801 9.74781 16.1374 10.8472 17.2368C11.951 18.3406 12.4009 18.519 14.0757 18.519C15.7506 18.519 16.2004 18.3406 17.3042 17.2368C18.4079 16.1331 18.5864 15.6832 18.5864 14.0084C18.5864 12.3559 18.4032 11.8793 17.3732 10.8489C16.0781 9.55377 13.7772 9.0117 12.3107 9.65575Z"
+                        fill="#87ACDB"
+                      />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/bellezzasky">
+                    <svg
+                      width="28"
+                      height="23"
+                      viewBox="0 0 28 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.1797 0.616194C15.4059 0.971444 14.5019 1.56728 14.1706 1.94011C13.344 2.87115 12.4865 5.01285 12.4865 6.14648C12.4865 7.06309 12.4478 7.07963 10.8239 6.85698C8.57453 6.54851 5.27247 4.93511 3.30066 3.18067C2.40761 2.38646 1.57646 1.8367 1.45406 1.95911C1.0355 2.37802 1.23001 5.26328 1.74389 6.25728C2.02598 6.80281 2.85712 7.73948 3.59048 8.33848L4.92425 9.42779L3.75791 9.4394C3.1167 9.44608 2.28556 9.28745 1.91131 9.08731C1.39075 8.80874 1.23106 8.83758 1.23106 9.21112C1.23106 10.2973 2.89616 12.1309 4.72376 13.0566C6.72653 14.0714 6.56016 14.2405 3.75228 14.0443C2.71115 13.9715 2.619 14.0348 2.92817 14.6127C3.53667 15.7491 4.69352 16.5753 6.56157 17.2078L8.37615 17.8222L6.89149 18.5795C5.99246 19.0385 4.34073 19.4363 2.70341 19.5883L0 19.8398L1.93453 20.756C4.81451 22.1208 7.27734 22.5928 10.2185 22.3441C17.4171 21.7356 22.8872 17.283 24.623 10.6191C24.9121 9.50869 25.1489 7.9674 25.1489 7.19394C25.1489 6.04553 25.3905 5.53834 26.4679 4.42686L27.7869 3.06566L26.3799 3.30097L24.973 3.53663L25.9051 2.71287C26.4176 2.25984 27.0985 1.46879 27.4182 0.955264L28 0.0214151L25.8516 0.889138L23.7032 1.75686L21.895 0.855724C19.767 -0.204749 18.1177 -0.273688 16.1797 0.616194Z"
+                        fill="#87ACDB"
+                      />
+                    </svg>
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <h3>Profile</h3>
+          <img src="./public/fotosendiri.jpeg" alt="Foto Ditya Athallah" />
+          <ul>
+            <li>
+              Nama: <br />
+              Ditya Athallah
+            </li>
+            <li>
+              Tanggal Lahir: <br />
+              07 Oktober 2000
+            </li>
+            <li>
+              Hobi: <br />
+              Coding, Belajar Bahasa, dll.
+            </li>
+          </ul>
+        </aside>
+      </span>
+    </main>
+    <footer>
+      <div class="flex-footer">
+        <h1>Dityath</h1>
+        <p>Personal Website for Dicoding Assignment</p>
+      </div>
+      <div class="end-footer">
+        <a href="mailto:dityaathallah107@gmail.com">
+          <svg
+            width="28"
+            height="22"
+            viewBox="0 0 28 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.7168 0.841844C0.2737 1.30487 -0.00979989 1.88512 0.0861001 2.13091C0.18235 2.37703 3.3523 4.47219 7.13055 6.78666L14 10.9955L20.8694 6.78666C24.6477 4.47219 27.8176 2.37703 27.9139 2.13091C28.0098 1.88512 27.7263 1.30487 27.2832 0.841844L26.4778 0H14H1.52215L0.7168 0.841844ZM0 12.7322V20.3125L0.85925 21.1561L1.71815 22H14H26.2819L27.1407 21.1561L28 20.3125V12.7322V5.15144L25.2875 6.81931C23.7954 7.73644 20.6454 9.67175 18.2875 11.12L14 13.7531L9.7125 11.12C7.3542 9.67175 4.20455 7.73644 2.7125 6.81931L0 5.15144V12.7322Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/dityath/">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.954722 0.954722L0 1.90906V14V26.0909L0.954722 27.0453L1.90906 28H14H26.0909L27.0453 27.0453L28 26.0909V14V1.90906L27.0453 0.954722L26.0909 0H14H1.90906L0.954722 0.954722ZM8.58122 5.45806C9.73117 6.07367 9.59272 8.06517 8.36111 8.62633C6.87711 9.30261 5.44444 8.51706 5.44444 7.02761C5.44444 5.3515 6.96267 4.592 8.58122 5.45806ZM9.33333 16.3333V21.7778H7.38889H5.44444V16.3333V10.8889H7.38889H9.33333V16.3333ZM16.3333 11.4722C16.3333 12.1979 16.7001 12.1948 17.6715 11.4598C18.0868 11.1459 18.9296 10.8889 19.5444 10.8889C22.3759 10.8889 23.3333 12.7034 23.3333 18.0709V21.7778H21.4029H19.4724L19.3612 17.9861L19.25 14.1944L18.1806 14.0716C16.7732 13.9094 16.3333 15.0558 16.3333 18.8864V21.7778H14.3889H12.4444V16.3333V10.8889H14.3889C15.8581 10.8889 16.3333 11.0316 16.3333 11.4722Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/dityath/">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.13711 0.316673C3.29636 0.867368 0.868829 3.44356 0.339706 5.40747C0.0592593 6.45003 -0.0552725 9.9311 0.0251354 14.9701C0.150258 22.8124 0.162024 22.9097 1.2038 24.4822C1.78234 25.3561 2.92962 26.49 3.75331 27.0019C5.21321 27.9095 5.47012 27.9326 14.0757 27.9326C22.6813 27.9326 22.9382 27.9095 24.3981 27.0019C25.2218 26.49 26.3691 25.3553 26.9476 24.481L28 22.8909V14.037C28 5.40119 27.9773 5.14624 27.0692 3.68596C26.5574 2.86227 25.4234 1.71498 24.5495 1.13644C22.9633 0.0856472 22.948 0.0840785 14.6939 0.007593C10.1471 -0.0347682 5.84666 0.104475 5.13711 0.316673ZM24.6503 3.59535C25.6925 4.85089 24.162 6.7795 22.8029 5.92365C21.9314 5.37491 21.7184 4.33 22.3283 3.59535C22.9339 2.8654 24.0447 2.8654 24.6503 3.59535ZM18.3844 7.48631C20.7229 9.03367 21.7243 10.9889 21.7243 14.0084C21.7243 17.067 20.7209 18.9842 18.2726 20.6045C16.0843 22.0527 12.2538 22.1092 10.029 20.7261C7.05984 18.8803 5.66467 15.2153 6.60367 11.7283C7.14339 9.7236 9.54385 7.15565 11.4128 6.58378C13.4693 5.95424 16.7021 6.37275 18.3844 7.48631ZM12.3107 9.65575C10.5648 10.4226 9.56503 12.0162 9.56503 14.0323C9.56503 15.6801 9.74781 16.1374 10.8472 17.2368C11.951 18.3406 12.4009 18.519 14.0757 18.519C15.7506 18.519 16.2004 18.3406 17.3042 17.2368C18.4079 16.1331 18.5864 15.6832 18.5864 14.0084C18.5864 12.3559 18.4032 11.8793 17.3732 10.8489C16.0781 9.55377 13.7772 9.0117 12.3107 9.65575Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a target="_blank" href="https://twitter.com/bellezzasky">
+          <svg
+            width="28"
+            height="23"
+            viewBox="0 0 28 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.1797 0.616194C15.4059 0.971444 14.5019 1.56728 14.1706 1.94011C13.344 2.87115 12.4865 5.01285 12.4865 6.14648C12.4865 7.06309 12.4478 7.07963 10.8239 6.85698C8.57453 6.54851 5.27247 4.93511 3.30066 3.18067C2.40761 2.38646 1.57646 1.8367 1.45406 1.95911C1.0355 2.37802 1.23001 5.26328 1.74389 6.25728C2.02598 6.80281 2.85712 7.73948 3.59048 8.33848L4.92425 9.42779L3.75791 9.4394C3.1167 9.44608 2.28556 9.28745 1.91131 9.08731C1.39075 8.80874 1.23106 8.83758 1.23106 9.21112C1.23106 10.2973 2.89616 12.1309 4.72376 13.0566C6.72653 14.0714 6.56016 14.2405 3.75228 14.0443C2.71115 13.9715 2.619 14.0348 2.92817 14.6127C3.53667 15.7491 4.69352 16.5753 6.56157 17.2078L8.37615 17.8222L6.89149 18.5795C5.99246 19.0385 4.34073 19.4363 2.70341 19.5883L0 19.8398L1.93453 20.756C4.81451 22.1208 7.27734 22.5928 10.2185 22.3441C17.4171 21.7356 22.8872 17.283 24.623 10.6191C24.9121 9.50869 25.1489 7.9674 25.1489 7.19394C25.1489 6.04553 25.3905 5.53834 26.4679 4.42686L27.7869 3.06566L26.3799 3.30097L24.973 3.53663L25.9051 2.71287C26.4176 2.25984 27.0985 1.46879 27.4182 0.955264L28 0.0214151L25.8516 0.889138L23.7032 1.75686L21.895 0.855724C19.767 -0.204749 18.1177 -0.273688 16.1797 0.616194Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
